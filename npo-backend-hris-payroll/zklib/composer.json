@@ -1,0 +1,42 @@
+{
+  "name": "local/zklib",
+  "description": "ZKLibrary",
+  "keywords": [
+    "local",
+    "zklib"
+  ],
+  "homepage": "",
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "....",
+      "email": "admin@acctechnology.ph",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.1"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^4.0",
+    "phpunit/phpunit": "^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Local\\Zklib\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Local\\Zklib\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
